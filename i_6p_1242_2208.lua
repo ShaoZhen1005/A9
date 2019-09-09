@@ -23,11 +23,30 @@ xy_List[10] = {1896,  994}
 xy_List[11] = {1750, 1195}
 -- 奢华之路12关分数区域
 xy_List[12] = {963, 481, 1049, 548}
+-- 领取多人卡包
+xy_List[13] = {1920, 1125}
+-- 
+--xy_List[] = {}
+
+m赛事弹窗1 = {
+	{ 1874,  186, 0xf80458},
+	{ 1852,  164, 0xfb0454},
+	{ 1896,  164, 0xfc0254},
+	{ 1851,  208, 0xff0056},
+	{ 1896,  209, 0xfd0053},
+}
+
+m赛事弹窗2 = {
+	{ 1874,  163, 0x044362},
+	{ 1851,  185, 0x044a6c},
+	{ 1872,  209, 0x05557a},
+	{ 1900,  182, 0x044a6c},
+}
 --
 --xy_List[] = {}
 
 function My比赛结束继续()
-	MyX,MyY = findMultiColorInRegionFuzzy( 0x00081f, "-12|-132|0xc3fb12,-560|-130|0xc2fb11,-572|-18|0xc3fb12,-10|-30|0xc5fb10,-40|-10|0xc3fa10,-16|-6|0x000821,0|-22|0x000820", 90, 1430, 1008, 2188, 1218)
+	MyX,MyY = findMultiColorInRegionFuzzy( 0x00081f, "-12|-132|0xc3fb12,-560|-130|0xc2fb11,-572|-18|0xc3fb12,-10|-30|0xc5fb10,-40|-10|0xc3fa10,-16|-6|0x000821,0|-22|0x000820", 80, 1430, 1008, 2188, 1218)
 	return (MyX ~= -1 and true or false), MyX, MyY
 end
 
@@ -62,7 +81,7 @@ function My选择奢华之路未全通()
 end
 
 function My在奢华之路()
-	MyX,MyY = findMultiColorInRegionFuzzy( 0xff0557, "-6|-6|0xfffeff,-10|-16|0xff276e,-14|-23|0xffffff,-22|-27|0xff0e5e,-80|-109|0xff0054,-68|-60|0xff0a5a,-54|-62|0xffffff", 90, 39, 1053, 201, 1211)
+	MyX,MyY = findMultiColorInRegionFuzzy( 0xff0052, "48|-23|0xff0356,-54|-64|0xfa0258,79|69|0xfa0250,8|20|0xfff9ff,-29|-18|0xf2ffff", 80, 26, 1038, 205, 1222)
 	return (MyX ~= -1 and true or false), MyX, MyY
 end
 
@@ -77,7 +96,6 @@ function My选择Z4() -- 假的
 end
 
 function My选择CSL()
---	MyX,MyY = findMultiColorInRegionFuzzy( 0x0d0e0f, "-12|-45|0xfcfcfb,-208|-44|0xfefeff,-218|-6|0x010101,-205|-3|0x000200,-44|-100|0xacb6b8,-275|107|0x111111,-275|102|0xffffff", 90, 742, 509, 1161, 766)
 	MyX,MyY = findMultiColorInRegionFuzzy( 0x000000, "3|-186|0xffffff,275|-9|0x020100,270|-17|0xfffffe,263|-17|0x010100,245|-9|0xfffffe,245|-4|0x010100,245|-22|0x000000", 90, 76, 386, 2192, 1194)
 	return (MyX ~= -1 and true or false), MyX, MyY
 end
@@ -118,9 +136,63 @@ end
 
 function My1() return end
 
+function My选中多人()
+	MyX,MyY = findMultiColorInRegionFuzzy( 0x0e254e, "8|27|0xfdfdfe,6|17|0x0e274f,24|18|0xffffff,28|35|0xfefefe,34|38|0x0e264f,58|53|0x025792", 90, 945, 1104, 1084, 1217)
+	return (MyX ~= -1 and true or false), MyX, MyY
+end
+
+function My点击多人()
+	MyX,MyY = findMultiColorInRegionFuzzy( 0xffffff, "60|49|0x14151d,22|16|0x030303,18|11|0xffffff,26|35|0x000000,29|21|0xffffff", 90, 947, 1108, 1094, 1229)
+	return (MyX ~= -1 and true or false), MyX, MyY
+end
+
+function My多人开始按钮()
+	MyX,MyY = findMultiColorInRegionFuzzy( 0xc4fb13, "285|69|0x020c21,-375|66|0x071120,733|71|0x000821,-288|-59|0xc2fb12,-277|71|0xc3fb11", 90, 920, 1013, 2158, 1203)
+	return (MyX ~= -1 and true or false), MyX, MyY
+end
+
+function My找到青铜级别车辆()
+	MyX,MyY = findMultiColorInRegionFuzzy( 0xe96b1e, "141|1|0x3c8fe3,279|1|0xd19200,422|3|0x6b19ea,560|2|0x4b4c4d", 90, 1385, 122, 2120, 269)
+	return (MyX ~= -1 and true or false), MyX, MyY
+end
+
+function My选择有油车辆()
+	MyX,MyY = findMultiColorInRegionFuzzy( 0x0c2639, "9|-1|0xbaf114,15|0|0x0d2739,60|-5|0x173337,66|-5|0xc3fb12", 90, 92, 654, 2192, 1162)
+	return (MyX ~= -1 and true or false), MyX, MyY
+end
+
+function My多人结束比赛()
+	MyX,MyY = findMultiColorInRegionFuzzy( 0xc2fb11, "275|76|0x000a21,-421|18|0xff0054,-319|72|0x000721,279|-50|0xc3fb13,28|0|0x0e2340,16|12|0xc3fb12", 90, 1260, 1019, 2157, 1213)
+	return (MyX ~= -1 and true or false), MyX, MyY
+end
+
+function My获得多人卡包()
+	MyX,MyY = findMultiColorInRegionFuzzy( 0xfcd901, "9|-7|0x172e3e,25|-21|0x1f343c,32|-24|0xfcda01,56|-24|0xfcd901,62|-6|0x172e3e,62|4|0x172e3e", 90, 1023, 1046, 1180, 1149)
+	return (MyX ~= -1 and true or false), MyX, MyY
+end
+
+function My多人赛季奖励()
+	MyX,MyY = findMultiColorInRegionFuzzy( 0xffffff, "-14|-6|0x0d2240,178|45|0x000821,29|-18|0x0d2240,24|-14|0xfefefe,33|-14|0xfefefe", 90, 1901, 1087, 2155, 1205)
+	return (MyX ~= -1 and true or false), MyX, MyY
+end
+
+function My声望升级() 
+	MyX,MyY = findMultiColorInRegionFuzzy( 0xffffff, "6|3|0x0d2240,8|14|0x0d2240,-10|14|0x0d2240,-5|15|0xffffff,59|9|0x0e2341,59|3|0xffffff", 90, 1031, 1049, 1170, 1123)
+	return (MyX ~= -1 and true or false), MyX, MyY
+end
+
+function My多人卡包奖励()
+	MyX,MyY = findMultiColorInRegionFuzzy( 0xffffff, "-11|-5|0x0d2240,-19|-2|0xffffff,-15|12|0xffffff,-5|11|0xffffff,33|-18|0x0e2341,34|-10|0x0f2441,34|7|0x0d2240", 90, 1837, 1077, 2167, 1209)
+	return (MyX ~= -1 and true or false), MyX, MyY
+end
+
+function My俱乐部里程奖励()
+	MyX,MyY = findMultiColorInRegionFuzzy( 0xffffff, "-5|5|0x0d2240,-11|9|0xffffff,0|19|0xffffff,14|4|0x0d2240,36|4|0x0d2240,43|14|0x102542,48|18|0xffffff", 90, 672, 988, 799, 1070)
+	return (MyX ~= -1 and true or false), MyX, MyY
+end
+
 function My()
 	MyX,MyY = 1,2
 	return (MyX ~= -1 and true or false), MyX, MyY
 end
-
 
