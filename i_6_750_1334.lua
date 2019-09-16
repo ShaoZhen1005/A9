@@ -31,20 +31,9 @@ xy_List[13] = {1813,  926}
 --
 --xy_List[] = {}
 
-m赛事弹窗1 = {
-	{ 1754,  163, 0xfd0158},
-	{ 1773,  143, 0xfc0153},
-	{ 1733,  143, 0xfa0158},
-	{ 1733,  182, 0xff0055},
-	{ 1773,  183, 0xff0056},
-}
+m赛事弹窗1 = {{ 1124,  111, 0xfd0256},{ 1111,   98, 0xff0156},{ 1137,   98, 0xfe0055},{ 1137,  123, 0xfc0256},{ 1112,  123, 0xfb0055},}
 
-m赛事弹窗2 = {
-	{ 1754,  144, 0xff0056},
-	{ 1736,  165, 0xff0056},
-	{ 1769,  163, 0xff0056},
-	{ 1751,  179, 0xff0056},
-}
+m赛事弹窗2 = {{ 1123,  100, 0xfd0256},{ 1111,  111, 0xfd0256},{ 1125,  123, 0xfd0256},{ 1135,  112, 0xfd0256},}
 
 function My比赛结束继续()
 	MyX,MyY = findMultiColorInRegionFuzzy( 0x00081f, "2|-74|0xc2fb12,-358|-75|0xc2fa13,-358|-4|0xc2fb12", 90, 880, 620, 1286, 731)
@@ -190,6 +179,11 @@ end
 function My俱乐部里程奖励() 
 	MyX,MyY = findMultiColorInRegionFuzzy( 0xc3fb13, "5|-5|0x102540,5|16|0x1f373c,11|8|0xc3fb13,176|43|0x000921,166|32|0xc4fc10,68|7|0x0d2240", 90, 773, 582, 1041, 680)
 	return (MyX ~= -1 and true or false), MyX, MyY
+end
+
+function My多人降杯()
+	if false then
+		return true, 1596, 1455 else return false, -1, -1 end
 end
 
 function My()

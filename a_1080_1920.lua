@@ -37,10 +37,10 @@ m赛事弹窗1 = {
 }
 
 m赛事弹窗2 = {
-	{ 1632,  142, 0x044362},
-	{ 1613,  162, 0x044a6c},
-	{ 1630,  181, 0x045378},
-	{ 1647,  163, 0x044d6e},
+	{ 1632,  142, 0xfb0253},
+	{ 1613,  162, 0xfb0253},
+	{ 1630,  181, 0xfb0253},
+	{ 1647,  163, 0xfb0253},
 }
 
 function My比赛结束继续()
@@ -187,6 +187,11 @@ end
 function My俱乐部里程奖励() 
 	MyX,MyY = findMultiColorInRegionFuzzy( 0xffffff, "228|47|0x010a22,-16|3|0xffffff,-66|-5|0x162a47,-60|-15|0xffffff,65|2|0x1e324e,64|-12|0xffffff", 90, 592, 861, 938, 979)
 	return (MyX ~= -1 and true or false), MyX, MyY
+end
+
+function My多人降杯()
+	if false then
+		return true, 1596, 1455 else return false, -1, -1 end
 end
 
 function My()

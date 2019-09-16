@@ -48,28 +48,13 @@ function My比赛结束继续()
 	return (MyX ~= -1 and true or false), MyX, MyY
 end
 
-function My找到第三关()
-	MyX,MyY = findMultiColorInRegionFuzzy( 0xc3fb12, "-29|-33|0xc3fb12,-54|83|0x141802,48|83|0x131802,-10|101|0xa6d60f", 90, 648, 346, 872, 557)
+function My在D级大师() -- 
+	MyX,MyY = findMultiColorInRegionFuzzy( 0xff0054, "54|64|0xfffbfd,58|72|0xff226b,39|81|0xff0256,79|79|0xff0054,91|59|0xffedf3", 90, 38, 1329, 212, 1505)
 	return (MyX ~= -1 and true or false), MyX, MyY
 end
 
-function My找到第五关()
-	MyX,MyY = findMultiColorInRegionFuzzy( 0xc3fb12, "-35|-34|0xc3fb12,28|28|0xc3fb12,-3|80|0x141800,2|90|0xa9db11,-14|94|0xaee213", 90, 704, 369, 814, 534)
-	return (MyX ~= -1 and true or false), MyX, MyY
-end
-
-function My选择D级精英()
-	MyX,MyY = findMultiColorInRegionFuzzy( 0x061f33, "-25|-34|0x051e32,2|-84|0xdedfe0,57|-2|0x0c2436,28|-28|0x132a3d,5|-60|0x041d31,-9|43|0xa6acb1,38|-30|0xe0e0e0", 90, 691, 697, 1478, 918)
-	return (MyX ~= -1 and true or false), MyX, MyY
-end
-
-function My选择D级大师()
-	MyX,MyY = findMultiColorInRegionFuzzy( 0xfcfcfc, "6|14|0x041d31,2|-26|0x041d31,27|52|0xdcdcdc,7|44|0xe3e3e3,47|47|0xdcdcdc,68|52|0xeeeeee,-16|55|0xfdfdfd,26|95|0x092135", 90, 691, 697, 1478, 918)
-	return (MyX ~= -1 and true or false), MyX, MyY
-end
-
-function My选择奢华之路() -- 假的
-	MyX,MyY = findMultiColorInRegionFuzzy( 0xfcfcfc, "-16|-99|0x041d31,-26|-106|0xdddddd,-5|-87|0xe2e2e1,-27|-83|0xe2e2e3,-35|-49|0xdadadb,-112|-108|0xf6f6f7,-109|-116|0x041d31", 90, 24, 462, 2122, 804)
+function My选择奢华之路() 
+	MyX,MyY = findMultiColorInRegionFuzzy( 0xe6e6e6, "-45|-29|0x041d31,12|-33|0xdcdcdc,15|-25|0x041d31,-2|24|0xdedede,30|67|0xfcfcfc,44|53|0x041d31", 90, 76, 374, 2124, 702)
 	return (MyX ~= -1 and true or false), MyX, MyY
 end
 
@@ -189,8 +174,37 @@ function My俱乐部里程奖励()
 	return (MyX ~= -1 and true or false), MyX, MyY
 end
 
+function My多人降杯()
+	if (isColor(1070,  825, 0xffffff, 85) and isColor(1226,  859, 0x000b20, 85) and isColor(1232,  859, 0x000921, 85) and isColor(1233,  852, 0x000a21, 85) and isColor(1233,  841, 0xffffff, 85) and isColor(1217,  856, 0xffffff, 85) and isColor(1055,  825, 0x0f2442, 85) and isColor(1054,  832, 0x132845, 85)) then
+	MyX,MyY = 1070,  825 return true else return false end
+end
+
+function My奢华卡15关()
+	if (isColor(1018, 1034, 0xc3fb12, 85) and isColor(1003, 1020, 0x050700, 85) and isColor(1037, 1034, 0x050600, 85) and isColor(1024, 1034, 0xc3fb12, 85) and isColor(1038, 1048, 0x070901, 85) and isColor(1050, 1007, 0xc3fb12, 85)) then
+	MyX,MyY = 1018, 1034 return true else return false end
+end
+
+function My奢华卡14关()
+	if (isColor(1020,  804, 0xc3fb12, 85) and isColor(1003,  791, 0x040500, 85) and isColor(1037,  805, 0x090b01, 85) and isColor(1024,  815, 0x050600, 85) and isColor(1024,  803, 0xc3fb12, 85) and isColor(1025,  794, 0x0e1101, 85)) then
+	MyX,MyY = 1020,  804 return true else return false end
+end
+
+function My奢华卡13关()
+	if (isColor( 760,  984, 0xc3fb12, 85) and isColor( 747,  969, 0x0f2938, 85) and isColor( 766,  985, 0xc3fb12, 85) and isColor( 768,  996, 0x0d2739, 85) and isColor( 782,  990, 0xc3fb12, 85) and isColor( 784,  977, 0x122c38, 85)) then
+	MyX,MyY = 760,  984 return true else return false end
+end
+
 function My()
+	if false then
+	MyX,MyY = 760,  984 return true else return false end
+end
+
+function My1() return end
+
+function My2()
 	MyX,MyY = 1,2
 	return (MyX ~= -1 and true or false), MyX, MyY
 end
+
+
 
