@@ -11,6 +11,7 @@ require("TSLib")
 init(1)
 time = os.time()
 main_time = os.time()
+rate = 1 -- 脚本延迟倍率
 
 if getOSType() == "android" then
 	bid = "com.aligames.kuang.kybc"
@@ -24,6 +25,12 @@ function tap(x,y)
 	touchMove(x, y)
 	mSleep(10)
 	touchUp(x, y)
+end
+
+mymSleep = mSleep
+
+function mSleep(num)
+	mymSleep(num*rate)
 end
 
 w,h = getScreenSize()
@@ -101,10 +108,9 @@ function My适配()
 		myLog("加载 750*1334")
 		phone_type = 4
 	elseif ( w == 640 and h == 1136 ) or ( h == 640 and w == 1136 ) then		--	IOS		5,5c,5s,touch5,touch6
-		myLog("暂不支持 640*1136 分辨率的设备\n请联系加群联系作者\n群号:422572664")
-		dialog("暂不支持 640*1136 分辨率的设备\n请联系加群联系作者\n群号:422572664")
-		lua_exit()
+		myLog("加载 640*1136")
 		phone_type = 5
+		rate = 1.2
 	elseif ( w == 1242 and h == 2208 ) or ( h == 1242 and w == 2208 ) then		--	IOS		6p,6sp
 		myLog("加载 1242*2208")
 		phone_type = 6
@@ -139,6 +145,7 @@ function My奢华金币(...)
 		keepScreen(true)
 
 		if (os.time() - main_time) > 180 then 
+			snapshot(os.time() .. ".png", 0, 0, h-1, w-1)
 			myLog("3分钟无响应重启游戏")
 			main_time = os.time()
 			closeApp(bid) mSleep(1000) 
@@ -147,30 +154,30 @@ function My奢华金币(...)
 		if My比赛中() then
 			myLog("My比赛中 " .. MyX .. ":" .. MyY)
 			tap(xy_List[1][1],  xy_List[1][2])
-		elseif rdo2 == "奢华之路12" and (My选择奢华之路() or My选择奢华之路未全通()) then
-			myLog("选择奢华之路 耗时 : " .. (os.time() - time) .. "秒 " .. MyX .. ":" .. MyY)
-			time = os.time()
-			main_time = os.time()
-			mSleep(1000)
-			tap(MyX,MyY)
-			mSleep(1500)
-			for var= 1, 8 do
-				moveTo(xy_List[6][1],xy_List[6][2],xy_List[6][3],xy_List[6][4],200)
-			end
-			mSleep(1500)
-			if ( w == 1536 and h == 2048 ) or ( h == 1536 and w == 2048 ) then
-				tap(xy_List[8][1],  xy_List[8][2])
-			else
-				tap(xy_List[7][1],  xy_List[7][2])
-				mSleep(1500)
-				tap(xy_List[8][1],  xy_List[8][2])
-			end
-			mSleep(1500)
-			keepScreen(false)
-			if ocrText(xy_List[12][1],xy_List[12][2],xy_List[12][3],xy_List[12][4],0,"1234567890") == "12" then
-				tap(xy_List[5][1],  xy_List[5][2])
-				mSleep(1000)
-			end
+--		elseif rdo2 == "奢华之路12" and (My选择奢华之路() or My选择奢华之路未全通()) then
+--			myLog("选择奢华之路 耗时 : " .. (os.time() - time) .. "秒 " .. MyX .. ":" .. MyY)
+--			time = os.time()
+--			main_time = os.time()
+--			mSleep(1000)
+--			tap(MyX,MyY)
+--			mSleep(1500)
+--			for var= 1, 8 do
+--				moveTo(xy_List[6][1],xy_List[6][2],xy_List[6][3],xy_List[6][4],200)
+--			end
+--			mSleep(1500)
+--			if ( w == 1536 and h == 2048 ) or ( h == 1536 and w == 2048 ) then
+--				tap(xy_List[8][1],  xy_List[8][2])
+--			else
+--				tap(xy_List[7][1],  xy_List[7][2])
+--				mSleep(1500)
+--				tap(xy_List[8][1],  xy_List[8][2])
+--			end
+--			mSleep(1500)
+--			keepScreen(false)
+--			if ocrText(xy_List[12][1],xy_List[12][2],xy_List[12][3],xy_List[12][4],0,"1234567890") == "12" then
+--				tap(xy_List[5][1],  xy_List[5][2])
+--				mSleep(1000)
+--			end
 		elseif My在奢华之路() then
 			myLog("My在奢华之路 耗时 : " .. (os.time() - time) .. "秒 " .. MyX .. ":" .. MyY)
 			nLog("My在奢华之路 耗时 : " .. (os.time() - time) .. "秒 " .. MyX .. ":" .. MyY)
@@ -209,6 +216,9 @@ function My奢华金币(...)
 				end
 			end
 			keepScreen(false)
+--			snapshot("1.png", xy_List[12][1],xy_List[12][2],xy_List[12][3],xy_List[12][4])
+--			nLog(ocrText(xy_List[12][1],xy_List[12][2],xy_List[12][3],xy_List[12][4],0,"1234567890"))
+--			lua_exit()
 			if ocrText(xy_List[12][1],xy_List[12][2],xy_List[12][3],xy_List[12][4],0,"1234567890") == "12" then
 				tap(xy_List[5][1],  xy_List[5][2])
 				mSleep(1000)
@@ -243,6 +253,9 @@ function My奢华金币(...)
 		elseif My返回游戏() then
 			myLog("返回游戏 " .. MyX .. ":" .. MyY)
 			tap(MyX,MyY)
+		elseif My俱乐部里程奖励() then
+			myLog("My俱乐部里程奖励 " .. MyX .. ":" .. MyY)
+			tap(MyX,MyY)
 		elseif MyGetColors(m赛事弹窗1,m赛事弹窗2,90,90) then
 			myLog("m赛事弹窗1")
 			tap(m赛事弹窗1[1][1],m赛事弹窗1[1][2])
@@ -270,6 +283,13 @@ function My大师金币(...)
 
 		keepScreen(false)
 		keepScreen(true)
+
+		if (os.time() - main_time) > 180 then 
+			snapshot(os.time() .. ".png", 0, 0, h-1, w-1)
+			myLog("3分钟无响应重启游戏")
+			main_time = os.time()
+			closeApp(bid) mSleep(1000) 
+		end
 
 		if My比赛中() then
 			myLog("My比赛中 " .. MyX .. ":" .. MyY)
@@ -324,6 +344,9 @@ function My大师金币(...)
 		elseif My返回游戏() then
 			myLog("返回游戏 " .. MyX .. ":" .. MyY)
 			tap(MyX,MyY)
+		elseif My俱乐部里程奖励() then
+			myLog("My俱乐部里程奖励 " .. MyX .. ":" .. MyY)
+			tap(MyX,MyY)
 		elseif MyGetColors(m赛事弹窗1,m赛事弹窗2,90,90) then
 			myLog("m赛事弹窗1")
 			tap(m赛事弹窗1[1][1],m赛事弹窗1[1][2])
@@ -352,6 +375,7 @@ function My刷多人(...)
 		keepScreen(true)
 
 		if (os.time() - main_time) > 300 then 
+			snapshot(os.time() .. ".png", 0, 0, h-1, w-1)
 			myLog("5分钟无响应重启游戏")
 			main_time = os.time()
 			closeApp(bid) mSleep(1000) 

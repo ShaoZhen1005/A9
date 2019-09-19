@@ -1,10 +1,10 @@
 -- 分辨率	  编号	平台	多人	大师	奢华	
 -- 1080 2160  1 	a		1		1		1
--- 1080 1920  2 	a
+-- 1080 1920  2 	a		1		1		1
 -- 720  1280  3 	a
--- 1242 2208  4 	i6
--- 640  1136  5 	i5
--- 750  1334  6 	ip		1		
+-- 750  1334  4 	i6		1		1		1
+-- 640  1136  5 	i5		1		1		1
+-- 1242 2208  6 	ip		1		1		1
 -- 1536 2048  7 	ipad
 
 xy_List = {}
@@ -13,7 +13,7 @@ if phone_type == 1 then xy_List[1] = {1822,841}
 elseif phone_type == 2 then xy_List[1] = {1615,  834}
 elseif phone_type == 3 then
 elseif phone_type == 4 then xy_List[1] = {1127,  577}
-elseif phone_type == 5 then
+elseif phone_type == 5 then xy_List[1] = {960,  488}
 elseif phone_type == 6 then xy_List[1] = {1127,  577}
 elseif phone_type == 7 then xy_List[1] = {1733, 1179}
 end
@@ -22,28 +22,28 @@ end
 if phone_type == 1 then xy_List[2] = {1000, 132}
 elseif phone_type == 2 then xy_List[2] = {902, 99}
 elseif phone_type == 3 then
-elseif phone_type == 4 then xy_List[2] = {1019, 131}
-elseif phone_type == 5 then
+elseif phone_type == 4 then xy_List[2] = {635, 69}
+elseif phone_type == 5 then xy_List[2] = {538, 59}
 elseif phone_type == 6 then xy_List[2] = {1042, 115}
 elseif phone_type == 7 then xy_List[2] = {1019, 131} -- 假的
 end
 
 -- 第四关
 if phone_type == 1 then xy_List[3] = {514,222}
-elseif phone_type == 2 then xy_List[3] = {453,  245}
+elseif phone_type == 2 then xy_List[3] = {453, 245}
 elseif phone_type == 3 then
-elseif phone_type == 4 then xy_List[3] = {514, 222}
-elseif phone_type == 5 then 
+elseif phone_type == 4 then xy_List[3] = {315, 181}
+elseif phone_type == 5 then xy_List[3] = {270, 151}
 elseif phone_type == 6 then xy_List[3] = {526, 319}
 elseif phone_type == 7 then xy_List[3] = {483, 207}
 end
 
 -- 第五关
 if phone_type == 1 then xy_List[4] = {1021,115}
-elseif phone_type == 2 then xy_List[4] = {903,  136}
+elseif phone_type == 2 then xy_List[4] = {903, 136}
 elseif phone_type == 3 then
-elseif phone_type == 4 then xy_List[4] = {1021, 115}
-elseif phone_type == 5 then
+elseif phone_type == 4 then xy_List[4] = {630, 100}
+elseif phone_type == 5 then xy_List[4] = {538, 80}
 elseif phone_type == 6 then xy_List[4] = {1037, 175}
 elseif phone_type == 7 then xy_List[4] = {965, 335}
 end
@@ -53,7 +53,7 @@ if phone_type == 1 then xy_List[5] = {1661,980}
 elseif phone_type == 2 then xy_List[5] = {1633,  985}
 elseif phone_type == 3 then
 elseif phone_type == 4 then xy_List[5] = {1099, 686}
-elseif phone_type == 5 then
+elseif phone_type == 5 then xy_List[5] = {970, 578}
 elseif phone_type == 6 then xy_List[5] = {1885, 1138}
 elseif phone_type == 7 then xy_List[5] = {1746, 1435}
 end
@@ -62,8 +62,8 @@ end
 if phone_type == 1 then xy_List[6] = {1372,  146, 1397,  996}
 elseif phone_type == 2 then xy_List[6] = {1250,  200, 1250,  1000}
 elseif phone_type == 3 then
-elseif phone_type == 4 then xy_List[6] = {800,100,800,700}
-elseif phone_type == 5 then
+elseif phone_type == 4 then xy_List[6] = {800, 100, 800, 700}
+elseif phone_type == 5 then xy_List[6] = {748, 88, 768, 586}
 elseif phone_type == 6 then xy_List[6] = {1336, 150,1382, 1200}
 elseif phone_type == 7 then xy_List[6] = {1318, 156, 1282, 1412}
 end
@@ -73,7 +73,7 @@ if phone_type == 1 then xy_List[7] = {1018, 1033}
 elseif phone_type == 2 then xy_List[7] = {902,  919}
 elseif phone_type == 3 then
 elseif phone_type == 4 then xy_List[7] = {629, 638}
-elseif phone_type == 5 then
+elseif phone_type == 5 then xy_List[7] = {536, 546}
 elseif phone_type == 6 then xy_List[7] = {1039, 1064}
 elseif phone_type == 7 then xy_List[7] = {1018, 1033} -- 假的
 end
@@ -83,7 +83,7 @@ if phone_type == 1 then xy_List[8] = {759,  985}
 elseif phone_type == 2 then xy_List[8] = {676,  933}
 elseif phone_type == 3 then
 elseif phone_type == 4 then xy_List[8] = {470, 650}
-elseif phone_type == 5 then
+elseif phone_type == 5 then xy_List[8] = {401, 553}
 elseif phone_type == 6 then xy_List[8] = {778, 1073}
 elseif phone_type == 7 then xy_List[8] = {722, 1426}
 end
@@ -93,7 +93,7 @@ if phone_type == 1 then xy_List[9] = { 1737,  958}
 elseif phone_type == 2 then xy_List[9] = {1618,  975}
 elseif phone_type == 3 then
 elseif phone_type == 4 then xy_List[9] = {1039, 671}
-elseif phone_type == 5 then
+elseif phone_type == 5 then xy_List[9] = {960,  565}
 elseif phone_type == 6 then xy_List[9] = {1770, 1132}
 elseif phone_type == 7 then xy_List[9] = {1731, 1398}
 end
@@ -103,7 +103,7 @@ if phone_type == 1 then xy_List[10] = {1856,  840}
 elseif phone_type == 2 then xy_List[10] = {1780,  863}
 elseif phone_type == 3 then
 elseif phone_type == 4 then xy_List[10] = {1153, 598}
-elseif phone_type == 5 then
+elseif phone_type == 5 then xy_List[10] = {965,  510}
 elseif phone_type == 6 then xy_List[10] = {1896, 994}
 elseif phone_type == 7 then xy_List[10] = {1772, 1313}
 end
@@ -113,7 +113,7 @@ if phone_type == 1 then xy_List[11] = { 1699, 1024}
 elseif phone_type == 2 then xy_List[11] = {1518, 1039}
 elseif phone_type == 3 then
 elseif phone_type == 4 then xy_List[11] = {1046, 721}
-elseif phone_type == 5 then
+elseif phone_type == 5 then xy_List[11] = {902,  615}
 elseif phone_type == 6 then xy_List[11] = {1750, 1195}
 elseif phone_type == 7 then xy_List[11] = {1623, 1491}
 end
@@ -122,8 +122,8 @@ end
 if phone_type == 1 then xy_List[12] = {941, 405, 1026, 466}
 elseif phone_type == 2 then xy_List[12] = {839, 421, 912, 477}
 elseif phone_type == 3 then
-elseif phone_type == 4 then xy_List[12] = {941, 405, 1026, 466}
-elseif phone_type == 5 then
+elseif phone_type == 4 then xy_List[12] = {584, 292, 633, 330}
+elseif phone_type == 5 then xy_List[12] = {495, 249, 539, 280}
 elseif phone_type == 6 then xy_List[12] = {963, 481, 1049, 548}
 elseif phone_type == 7 then xy_List[12] = {895, 639, 975, 705}
 end
@@ -132,8 +132,8 @@ end
 if phone_type == 1 then xy_List[13] = {1813,  926}
 elseif phone_type == 2 then xy_List[13] = {1813,  926}
 elseif phone_type == 3 then
-elseif phone_type == 4 then xy_List[13] = {1813, 926}
-elseif phone_type == 5 then
+elseif phone_type == 4 then xy_List[13] = {1813, 926} -- 假的
+elseif phone_type == 5 then xy_List[13] = {1016, 582}
 elseif phone_type == 6 then xy_List[13] = {1920, 1125}
 elseif phone_type == 7 then xy_List[13] = {1813, 926} -- 假的
 end
@@ -143,7 +143,7 @@ if phone_type == 1 then xy_List[14] = {1399, 1022}
 elseif phone_type == 2 then xy_List[14] = {1240, 1038}
 elseif phone_type == 3 then
 elseif phone_type == 4 then xy_List[14] = {854,  722}
-elseif phone_type == 5 then
+elseif phone_type == 5 then xy_List[14] = {731,  615}
 elseif phone_type == 6 then xy_List[14] = {1423, 1194}
 elseif phone_type == 7 then xy_List[17] = { 1314, 1493}
 end
@@ -153,7 +153,7 @@ if phone_type == 1 then xy_List[15] = {588,  477, 1073,  833}
 elseif phone_type == 2 then xy_List[15] = {522,  420, 944,  814}
 elseif phone_type == 3 then
 elseif phone_type == 4 then xy_List[15] = {353, 319, 722, 573}
-elseif phone_type == 5 then
+elseif phone_type == 5 then xy_List[15] = {303, 266, 633, 481}
 elseif phone_type == 6 then xy_List[15] = {596, 526, 1216, 940}
 elseif phone_type == 7 then xy_List[15] = {616, 686, 1212, 1074}
 end
@@ -163,7 +163,7 @@ if phone_type == 1 then xy_List[16] = {1619,  537}
 elseif phone_type == 2 then xy_List[16] = {1284,  540}
 elseif phone_type == 3 then
 elseif phone_type == 4 then xy_List[16] = {1093,  382}
-elseif phone_type == 5 then
+elseif phone_type == 5 then xy_List[16] = {637,  316}
 elseif phone_type == 6 then xy_List[16] = {1372,  586}
 elseif phone_type == 7 then xy_List[16] = {1096,  755}
 end
@@ -172,8 +172,8 @@ end
 if phone_type == 1 then xy_List[17] = {734,  808}
 elseif phone_type == 2 then xy_List[17] = {732,  800}
 elseif phone_type == 3 then
-elseif phone_type == 4 then xy_List[17] = {837,  556}
-elseif phone_type == 5 then
+elseif phone_type == 4 then xy_List[17] = {683,  555}
+elseif phone_type == 5 then xy_List[17] = {478,  470}
 elseif phone_type == 6 then xy_List[17] = {882,  922}
 elseif phone_type == 7 then xy_List[17] = {1016, 1139}
 end
@@ -184,7 +184,7 @@ if phone_type == 1 then xy_List[18] = {764,  421}
 elseif phone_type == 2 then xy_List[18] = {732,  800}
 elseif phone_type == 3 then
 elseif phone_type == 4 then xy_List[18] = {837,  556}
-elseif phone_type == 5 then
+elseif phone_type == 5 then -- 不需要
 elseif phone_type == 6 then xy_List[18] = {882,  922}
 elseif phone_type == 7 then xy_List[18] = {1016, 1139}
 end
@@ -208,7 +208,9 @@ elseif phone_type == 3 then
 elseif phone_type == 4 then
 	m赛事弹窗1 = {{ 1124,  111, 0xfd0256},{ 1111,   98, 0xff0156},{ 1137,   98, 0xfe0055},{ 1137,  123, 0xfc0256},{ 1112,  123, 0xfb0055},}
 	m赛事弹窗2 = {{ 1123,  100, 0xfd0256},{ 1111,  111, 0xfd0256},{ 1125,  123, 0xfd0256},{ 1135,  112, 0xfd0256},}
-elseif phone_type == 5 then
+elseif phone_type == 5 then -- 假的
+	m赛事弹窗1 = {{ 1874,  186, 0xf80458},{ 1852,  164, 0xfb0454},{ 1896,  164, 0xfc0254},{ 1851,  208, 0xff0056},{ 1896,  209, 0xfd0053},} -- 假的
+	m赛事弹窗2 = {{ 1874,  163, 0xf80458},{ 1851,  185, 0xf80458},{ 1872,  209, 0xf80458},{ 1900,  182, 0xf80458},}							-- 假的
 elseif phone_type == 6 then
 	m赛事弹窗1 = {{ 1874,  186, 0xf80458},{ 1852,  164, 0xfb0454},{ 1896,  164, 0xfc0254},{ 1851,  208, 0xff0056},{ 1896,  209, 0xfd0053},}
 	m赛事弹窗2 = {{ 1874,  163, 0xf80458},{ 1851,  185, 0xf80458},{ 1872,  209, 0xf80458},{ 1900,  182, 0xf80458},}
@@ -229,6 +231,8 @@ function My比赛结束继续()
 		MyX,MyY = findMultiColorInRegionFuzzy( 0x00081f, "2|-74|0xc2fb12,-358|-75|0xc2fa13,-358|-4|0xc2fb12", 90, 880, 620, 1286, 731)
 		return (MyX ~= -1 and true or false), MyX, MyY
 	elseif phone_type == 5 then
+		MyX,MyY = findMultiColorInRegionFuzzy( 0x00091c, "0|-6|0x00081b,-8|2|0x000621,-22|0|0xc4fb10,-12|-6|0xc5fe10,-4|-13|0xc5fc10", 90, 708, 491, 1132, 635)
+		return (MyX ~= -1 and true or false), MyX, MyY
 	elseif phone_type == 6 then
 		MyX,MyY = findMultiColorInRegionFuzzy( 0x00081f, "-12|-132|0xc3fb12,-560|-130|0xc2fb11,-572|-18|0xc3fb12,-10|-30|0xc5fb10,-40|-10|0xc3fa10,-16|-6|0x000821,0|-22|0x000820", 80, 1430, 1008, 2188, 1218)
 		return (MyX ~= -1 and true or false), MyX, MyY
@@ -247,9 +251,15 @@ function My在D级大师()
 		return (MyX ~= -1 and true or false), MyX, MyY
 	elseif phone_type == 3 then
 	elseif phone_type == 4 then
-		MyX,MyY = findMultiColorInRegionFuzzy( 0x041d31, "-2|-14|0xdadbdb,12|-20|0xe0e1e0,12|56|0xfbfbfb,-28|69|0x072033,-25|55|0xe1e1e1,24|37|0xffffff,-4|40|0xdedede", 90, 23, 99, 1294, 664)
+		MyX,MyY = findMultiColorInRegionFuzzy( 0xfffcfc, "-1|7|0xff0b5b,-14|9|0xff0456,-32|-2|0xff0054,-10|-13|0xff0255,-4|-19|0xff0255", 90, 20, 628, 120, 735)
 		return (MyX ~= -1 and true or false), MyX, MyY
 	elseif phone_type == 5 then
+		if (isColor(  74,  590, 0xff0054, 85) and isColor(  51,  592, 0xff0155, 85) and isColor(  62,  589, 0xff1361, 85) and isColor(  62,  583, 0xfffcfd, 85) and isColor(  45,  580, 0xfff1f6, 85) and isColor(  53,  572, 0xff0859, 85) and isColor(  74,  573, 0xff4c87, 85)) then
+			MyX,MyY =  74,  590 
+			return true 
+		else
+			return false
+		end	
 	elseif phone_type == 6 then
 		MyX,MyY = findMultiColorInRegionFuzzy( 0xff0054, "-29|-62|0xfff6f8,34|-66|0xfffefe,-4|-88|0xff0054,-14|-77|0xff0155,2|-46|0xff0759,-7|-44|0xffeef4,11|-44|0xfff3f6", 90, 34, 1042, 208, 1218)
 		return (MyX ~= -1 and true or false), MyX, MyY
@@ -309,6 +319,12 @@ function My在奢华之路()
 		MyX,MyY = findMultiColorInRegionFuzzy( 0xff0054, "27|13|0xff0a5a,16|-14|0xff0255,22|-20|0xfffdfe,43|-29|0xff0054,-4|-26|0xfffefe,-7|-37|0xfffcfd,27|-15|0xff0155", 90, 23, 633, 122, 733)
 		return (MyX ~= -1 and true or false), MyX, MyY
 	elseif phone_type == 5 then
+		if (isColor(  55,  581, 0xff0155, 85) and isColor(  67,  580, 0xff0256, 85) and isColor(  60,  591, 0xffffff, 85) and isColor(  67,  603, 0xff0d5d, 85) and isColor(  40,  571, 0xfffeff, 85) and isColor(  81,  568, 0xff0155, 85)) then
+			MyX,MyY = 55,  581
+			return true 
+		else
+			return false
+		end
 	elseif phone_type == 6 then
 		MyX,MyY = findMultiColorInRegionFuzzy( 0xff0052, "48|-23|0xff0356,-54|-64|0xfa0258,79|69|0xfa0250,8|20|0xfff9ff,-29|-18|0xf2ffff", 80, 26, 1038, 205, 1222)
 		return (MyX ~= -1 and true or false), MyX, MyY
@@ -332,8 +348,15 @@ function My选择CSL()
 	elseif phone_type == 3 then
 	elseif phone_type == 4 then
 		MyX,MyY = findMultiColorInRegionFuzzy( 0x121214, "-6|-30|0xfefefe,-25|-27|0xfcfcfc,-125|-28|0xfdfdfd,-128|5|0x999b29,-27|-60|0xa8b3bc,15|5|0x899000", 90, 93, 232, 1280, 720)
-		return (MyX ~= -1 and true or false), MyX, MyY
+		if MyX == -1 then
+			MyX,MyY = findMultiColorInRegionFuzzy( 0xa0ad03, "17|-14|0xfcfbfc,-83|-14|0xfefefe,-79|13|0x000100,46|13|0x111110,58|13|0x919b00,-12|16|0x000001", 90, 88, 230, 1328, 713)
+			return (MyX ~= -1 and true or false), MyX, MyY
+		else
+			return (MyX ~= -1 and true or false), MyX, MyY
+		end
 	elseif phone_type == 5 then
+		MyX,MyY = findMultiColorInRegionFuzzy( 0x9ba700, "-64|-8|0xe6e6e5,-15|-21|0xdcee6d,-12|17|0x050601,8|17|0x929700,43|14|0x0f1011,39|-13|0xfdfdfd", 90, 78, 202, 1120, 605)
+		return (MyX ~= -1 and true or false), MyX, MyY
 	elseif phone_type == 6 then
 		MyX,MyY = findMultiColorInRegionFuzzy( 0x000000, "3|-186|0xffffff,275|-9|0x020100,270|-17|0xfffffe,263|-17|0x010100,245|-9|0xfffffe,245|-4|0x010100,245|-22|0x000000", 90, 76, 386, 2192, 1194)
 		return (MyX ~= -1 and true or false), MyX, MyY
@@ -355,6 +378,12 @@ function My开始比赛()
 		MyX,MyY = findMultiColorInRegionFuzzy( 0xc3fb11, "275|42|0x000921,275|-114|0x185b85,-453|1|0xffffff,-465|18|0xffffff,-260|-71|0xc3fb11", 90, 1305, 780, 2121, 1042)
 		return (MyX ~= -1 and true or false), MyX, MyY
 	elseif phone_type == 5 then
+		if (isColor(1053,  513, 0xb3e714, 85) and isColor(1062,  513, 0xb5e913, 85) and isColor(1058,  508, 0x07122d, 85) and isColor(1055,  505, 0xb2e714, 85) and isColor(1064,  505, 0xa6d716, 85) and isColor( 931,  517, 0x3aa3e6, 85) and isColor( 909,  516, 0xf2f2f4, 85)) then
+			MyX,MyY = 955,  573 -- 判断智能操作 返回开始按钮
+			return true 
+		else
+			return false
+		end
 	elseif phone_type == 6 then
 		MyX,MyY = findMultiColorInRegionFuzzy( 0xc3fb11, "275|42|0x000921,275|-114|0x185b85,-453|1|0xffffff,-465|18|0xffffff,-260|-71|0xc3fb11", 90, 1305, 780, 2121, 1042)
 		return (MyX ~= -1 and true or false), MyX, MyY
@@ -401,6 +430,12 @@ function My选中生涯()
 		MyX,MyY = findMultiColorInRegionFuzzy( 0x101636, "-1|28|0x025792,-53|13|0xffffff,-53|4|0xfcfcfd,-57|9|0x101c44,-50|9|0x101842,-49|-19|0xf3f4f6", 90, 959, 642, 1097, 746)
 		return (MyX ~= -1 and true or false), MyX, MyY
 	elseif phone_type == 5 then
+		if (isColor( 845,  593, 0x0c224f, 85) and isColor( 925,  619, 0x025792, 85) and isColor( 877,  609, 0xfcfcfd, 85) and isColor( 873,  605, 0x101b44, 85) and isColor( 877,  601, 0xfdfdfe, 85) and isColor( 881,  597, 0x0f1b45, 85)) then
+			MyX,MyY = 845,  593
+			return true 
+		else 
+			return false 
+		end
 	elseif phone_type == 6 then
 		MyX,MyY = findMultiColorInRegionFuzzy( 0x025792, "-90|-27|0xffffff,-85|-33|0x101942,-96|-23|0x12264f,-41|-45|0x10183d,-26|-26|0x11173b", 90, 1672, 1100, 1815, 1222)
 		return (MyX ~= -1 and true or false), MyX, MyY
@@ -426,6 +461,12 @@ function My点击生涯()
 		MyX,MyY = findMultiColorInRegionFuzzy( 0xffffff, "-10|6|0x000000,-13|11|0xffffff,-7|11|0xfefefe,43|29|0x14151d,38|20|0xffffff,25|7|0x0b0b0b,21|10|0xffffff", 90, 988, 651, 1095, 742)
 		return (MyX ~= -1 and true or false), MyX, MyY
 	elseif phone_type == 5 then
+		if (isColor( 846,  584, 0xffffff, 85) and isColor( 771,  539, 0xff0054, 85) and isColor( 924,  539, 0xff0054, 85) and isColor( 923,  621, 0x14151d, 85) and isColor( 907,  612, 0x040404, 85) and isColor( 891,  609, 0xffffff, 85)) then
+			MyX,MyY = 846,  584
+			return true 
+		else 
+			return false 
+		end
 	elseif phone_type == 6 then
 		MyX,MyY = findMultiColorInRegionFuzzy( 0x14151d, "-4|-13|0xffffff,-31|-32|0x010101,-36|-37|0xffffff,-26|-28|0xffffff,-37|-28|0xffffff,-31|-14|0x000000", 90, 1667, 1100, 1812, 1222)
 		return (MyX ~= -1 and true or false), MyX, MyY
@@ -451,6 +492,12 @@ function My返回游戏()
 		MyX,MyY = findMultiColorInRegionFuzzy( 0xffffff, "-25|4|0x112643,-36|-5|0xffffff,149|34|0x000721,143|30|0xffffff,61|-4|0x0d2240,51|-5|0xffffff", 90, 1070, 202, 1298, 288)
 		return (MyX ~= -1 and true or false), MyX, MyY
 	elseif phone_type == 5 then
+		if (isColor( 975,  202, 0xffffff, 85) and isColor(1093,  227, 0x000421, 85) and isColor(1086,  220, 0xffffff, 85) and isColor(1085,   68, 0xf10050, 85) and isColor(1084,   47, 0xfc0051, 85) and isColor(1015,  196, 0x0f2442, 85)) then
+			MyX,MyY = 975,  202 
+			return true 
+		else 
+			return false 
+		end
 	elseif phone_type == 6 then
 		MyX,MyY = findMultiColorInRegionFuzzy( 0x000821, "1|-125|0xffffff,-457|4|0xffffff,-17|-343|0xf50150,-293|-52|0x0d2240,-150|-65|0x0e2340", 90, 1648, 67, 2139, 475)
 		return (MyX ~= -1 and true or false), MyX, MyY
@@ -476,6 +523,12 @@ function My比赛中()
 		MyX,MyY = findMultiColorInRegionFuzzy( 0x14bde9, "16|-9|0x14bde9,-15|11|0x14bde9,-33|13|0x000000,-89|7|0x399edd,-103|6|0x050809,-182|15|0x000000,243|-89|0xffc202,254|-74|0xfff301", 90, 21, 15, 497, 156)
 		return (MyX ~= -1 and true or false), MyX, MyY
 	elseif phone_type == 5 then
+		if (isColor( 391,   34, 0xffc200, 85) and isColor( 401,   48, 0xfdf601, 85) and isColor( 185,  110, 0x14bde9, 85) and isColor( 200,  121, 0x14bde9, 85) and isColor( 171,   99, 0x13bce5, 85) and isColor(  33,  103, 0x000000, 85) and isColor(  66,  108, 0xe2e2e2, 85)) then
+			MyX,MyY = 391,   34 
+			return true 
+		else 
+			return false 
+		end
 	elseif phone_type == 6 then
 		MyX,MyY = findMultiColorInRegionFuzzy( 0x14bde9, "-31|-16|0x14bde9,25|30|0x14bde9,400|-145|0xffc002,419|-122|0xfeed02,-298|-13|0x000000,-106|-3|0x3aa1e2,-115|-4|0x020a10,-123|2|0x3aa3e5", 90, 39, 32, 817, 255)
 		return (MyX ~= -1 and true or false), MyX, MyY
@@ -498,6 +551,7 @@ function My开启自动驾驶()
 	elseif phone_type == 4 then
 		return (isColor(1243,  595, 0xff0000, 85) and isColor(1242,  602, 0xfe0000, 85) and isColor(1239,  598, 0x07132d, 85) and isColor(1247,  598, 0x08132e, 85) and isColor(1239,  595, 0xf20102, 85) and isColor(1248,  595, 0xf20102, 85))
 	elseif phone_type == 5 then
+		return (isColor(1058,  514, 0xf20002, 85) and isColor(1055,  511, 0x07132c, 85) and isColor(1063,  511, 0x07122d, 85) and isColor( 881,  509, 0xe1e3e6, 85) and isColor( 891,  507, 0x08142e, 85) and isColor( 931,  517, 0x3aa3e6, 85))
 	elseif phone_type == 6 then
 		return (isColor(2058,  986, 0xfc0000, 85) and isColor(2057,  980, 0x07132d, 85) and isColor(2053,  990, 0x07132d, 85) and isColor(2062,  990, 0x08132e, 85) and isColor(1733,  985, 0x08132d, 85) and isColor(1714,  986, 0xf8f8f9, 85)) 
 	elseif phone_type == 7 then
@@ -517,6 +571,12 @@ function My选中多人()
 		MyX,MyY = findMultiColorInRegionFuzzy( 0x0f254e, "-7|13|0xfeffff,-9|20|0xfdfdfd,-13|16|0x0d244d,-13|24|0x0e254e", 90, 561, 652, 651, 743)
 		return (MyX ~= -1 and true or false), MyX, MyY
 	elseif phone_type == 5 then
+		if (isColor( 473,  587, 0x0d244d, 85) and isColor( 466,  573, 0x084a84, 85) and isColor( 549,  623, 0x025792, 85) and isColor( 502,  606, 0xdcdfe5, 85) and isColor( 505,  603, 0x0e254c, 85) and isColor( 525,  609, 0xf3f5f7, 85)) then
+			MyX,MyY = 473,  587 
+			return true 
+		else 
+			return false 
+		end	
 	elseif phone_type == 6 then
 		MyX,MyY = findMultiColorInRegionFuzzy( 0x0e254e, "8|27|0xfdfdfe,6|17|0x0e274f,24|18|0xffffff,28|35|0xfefefe,34|38|0x0e264f,58|53|0x025792", 90, 945, 1104, 1084, 1217)
 		return (MyX ~= -1 and true or false), MyX, MyY
@@ -542,6 +602,12 @@ function My点击多人()
 		MyX,MyY = findMultiColorInRegionFuzzy( 0xffffff, "18|11|0x060606,15|8|0xffffff,7|11|0xffffff,9|17|0x040404,-6|20|0x030303", 90, 564, 656, 659, 739)
 		return (MyX ~= -1 and true or false), MyX, MyY
 	elseif phone_type == 5 then
+		if (isColor( 469,  581, 0xffffff, 85) and isColor( 396,  539, 0xff0054, 85) and isColor( 551,  539, 0xff0054, 85) and isColor( 551,  620, 0x14151d, 85) and isColor( 533,  603, 0x090909, 85) and isColor( 524,  602, 0xffffff, 85) and isColor( 512,  610, 0x121212, 85)) then
+			MyX,MyY = 469,  581
+			return true 
+		else 
+			return false 
+		end	
 	elseif phone_type == 6 then
 		MyX,MyY = findMultiColorInRegionFuzzy( 0xffffff, "60|49|0x14151d,22|16|0x030303,18|11|0xffffff,26|35|0x000000,29|21|0xffffff", 90, 947, 1108, 1094, 1229)
 		return (MyX ~= -1 and true or false), MyX, MyY
@@ -567,6 +633,12 @@ function My多人开始按钮()
 		MyX,MyY = findMultiColorInRegionFuzzy( 0xc3fb12, "173|37|0x020a21,-19|5|0x142a3e,-7|5|0x132a3e,-11|1|0xc3fb12,-3|9|0xc3fb12", 90, 780, 640, 1028, 722)
 		return (MyX ~= -1 and true or false), MyX, MyY
 	elseif phone_type == 5 then
+		if (isColor( 706,  567, 0xc4fb11, 85) and isColor( 858,  598, 0x000921, 85) and isColor( 855,  592, 0xc4fa10, 85) and isColor( 845,  595, 0xc2fc10, 85) and isColor( 718,  577, 0x0d2240, 85) and isColor( 717,  572, 0xc2fc11, 85) and isColor( 702,  571, 0x12283e, 85)) then
+			MyX,MyY = 706,  567
+			return true 
+		else 
+			return false 
+		end		
 	elseif phone_type == 6 then
 		if (isColor(1378, 1122, 0xc4fb12, 85) and isColor(1670, 1164, 0x000b21, 85) and isColor(1662, 1056, 0xc2fb13, 85) and isColor(1106, 1162, 0xc3fb11, 85) and isColor(1006, 1166, 0x000821, 85) and isColor(2110, 1166, 0x000821, 85) and isColor(1108, 1050, 0xc3fb11, 85) and isColor(1347, 1110, 0x0e2340, 85) and isColor(1347, 1091, 0x0e2340, 85)) then
 			MyX,MyY = 1378, 1122
@@ -596,6 +668,12 @@ function My找到青铜级别车辆()
 		MyX,MyY = findMultiColorInRegionFuzzy( 0xec6718, "84|3|0x3782d7,169|3|0xd39603,254|0|0x7622e9,336|3|0x4a4a4a", 90, 865, 82, 1266, 153)
 		return (MyX ~= -1 and true or false), MyX, MyY
 	elseif phone_type == 5 then
+		if (isColor( 747,   97, 0xec6918, 85) and isColor( 819,  100, 0x3d82d5, 85) and isColor( 890,   99, 0xcc8b02, 85) and isColor( 963,   97, 0x7022e0, 85) and isColor(1035,  100, 0x494b4c, 85)) then
+			MyX,MyY = 747,   97
+			return true 
+		else 
+			return false 
+		end		
 	elseif phone_type == 6 then
 		MyX,MyY = findMultiColorInRegionFuzzy( 0xe96b1e, "141|1|0x3c8fe3,279|1|0xd19200,422|3|0x6b19ea,560|2|0x4b4c4d", 90, 1385, 122, 2120, 269)
 		return (MyX ~= -1 and true or false), MyX, MyY
@@ -621,6 +699,8 @@ function My选择有油车辆()
 		MyX,MyY = findMultiColorInRegionFuzzy( 0x0c2639, "10|0|0x0c2739,36|-3|0x1e3b35,40|-2|0xc3fb12,57|-2|0xc3fb12", 90, 41, 366, 1330, 700)
 		return (MyX ~= -1 and true or false), MyX, MyY
 	elseif phone_type == 5 then
+		MyX,MyY = findMultiColorInRegionFuzzy( 0x0d2838, "4|0|0xa2d518,9|-1|0x0d2738,30|-1|0x1b3835,33|0|0xc3fb12,28|-8|0xc3fb12", 90, 55, 330, 1132, 600)
+		return (MyX ~= -1 and true or false), MyX, MyY
 	elseif phone_type == 6 then
 		MyX,MyY = findMultiColorInRegionFuzzy( 0x0c2639, "9|-1|0xbaf114,15|0|0x0d2739,60|-5|0x173337,66|-5|0xc3fb12", 90, 92, 654, 2192, 1162)
 		return (MyX ~= -1 and true or false), MyX, MyY
@@ -642,6 +722,8 @@ function My多人结束比赛()
 		MyX,MyY = findMultiColorInRegionFuzzy( 0x00081d, "-4|-5|0xc4f911,-20|9|0xc4fb10,-9|11|0x000821,0|12|0x00081d,-442|-30|0xff0054", 90, 806, 632, 1294, 737)
 		return (MyX ~= -1 and true or false), MyX, MyY
 	elseif phone_type == 5 then
+		MyX,MyY = findMultiColorInRegionFuzzy( 0x00091c, "0|-6|0x00081b,-8|2|0x000621,-22|0|0xc4fb10,-12|-6|0xc5fe10,-4|-13|0xc5fc10", 90, 708, 491, 1132, 635)
+		return (MyX ~= -1 and true or false), MyX, MyY
 	elseif phone_type == 6 then
 		MyX,MyY = findMultiColorInRegionFuzzy( 0xc2fb11, "275|76|0x000a21,-421|18|0xff0054,-319|72|0x000721,279|-50|0xc3fb13,28|0|0x0e2340,16|12|0xc3fb12", 90, 1260, 1019, 2157, 1213)
 		return (MyX ~= -1 and true or false), MyX, MyY
@@ -667,6 +749,12 @@ function My获得多人卡包()
 		MyX,MyY = findMultiColorInRegionFuzzy( 0xfcda01, "158|36|0x061022,23|-9|0xfcda01,23|2|0x172e3e,12|4|0x162d3e,8|1|0xfcda01", 90, 624, 639, 855, 716)
 		return (MyX ~= -1 and true or false), MyX, MyY
 	elseif phone_type == 5 then
+		if (isColor( 568,  566, 0xfcda00, 85) and isColor( 703,  596, 0x050f20, 85) and isColor( 587,  569, 0x162c3d, 85) and isColor( 588,  559, 0xfcda01, 85) and isColor( 568,  562, 0xfcda00, 85) and isColor( 578,  560, 0x162d3d, 85)) then
+			MyX,MyY = 568,  566
+			return true 
+		else 
+			return false 
+		end		
 	elseif phone_type == 6 then
 		MyX,MyY = findMultiColorInRegionFuzzy( 0xfcd901, "9|-7|0x172e3e,25|-21|0x1f343c,32|-24|0xfcda01,56|-24|0xfcd901,62|-6|0x172e3e,62|4|0x172e3e", 90, 1023, 1046, 1180, 1149)
 		return (MyX ~= -1 and true or false), MyX, MyY
@@ -690,6 +778,12 @@ function My多人赛季奖励()
 		MyX,MyY = findMultiColorInRegionFuzzy( 0x040725, "-5|-5|0xffffff,-8|8|0x000521,-15|6|0xffffff,-215|-52|0xffffff,-229|-52|0x07132f,-214|-66|0x07132f", 90, 1033, 619, 1306, 726)
 		return (MyX ~= -1 and true or false), MyX, MyY
 	elseif phone_type == 5 then
+		if (isColor(1007,  571, 0xffffff, 85) and isColor(1095,  605, 0x000621, 85) and isColor(1090,  599, 0xffffff, 85) and isColor( 915,  558, 0xffffff, 85) and isColor( 998,  580, 0x233751, 85) and isColor(1020,  586, 0x2c3e58, 85)) then
+			MyX,MyY = 1007,  571
+			return true 
+		else 
+			return false 
+		end		
 	elseif phone_type == 6 then
 		MyX,MyY = findMultiColorInRegionFuzzy( 0xffffff, "-14|-6|0x0d2240,178|45|0x000821,29|-18|0x0d2240,24|-14|0xfefefe,33|-14|0xfefefe", 90, 1901, 1087, 2155, 1205)
 		return (MyX ~= -1 and true or false), MyX, MyY
@@ -709,6 +803,12 @@ function My声望升级()
 		MyX,MyY = findMultiColorInRegionFuzzy( 0xffffff, "145|31|0x000521,141|26|0xffffff,154|22|0x090b28,151|17|0xffffff,-156|-32|0xffffff,-29|-1|0x0d2240,-19|-7|0x0e2240,-23|-10|0xffffff", 90, 484, 600, 851, 710)
 		return (MyX ~= -1 and true or false), MyX, MyY
 	elseif phone_type == 5 then
+		if (isColor( 570,  561, 0xffffff, 85) and isColor( 698,  583, 0x000321, 85) and isColor( 440,  534, 0xffffff, 85) and isColor( 550,  554, 0xffffff, 85) and isColor( 553,  556, 0x1a2e4a, 85) and isColor( 559,  556, 0x1f334e, 85) and isColor( 559,  561, 0x0f2442, 85) and isColor( 559,  566, 0x112643, 85)) then
+			MyX,MyY = 570,  561
+			return true 
+		else 
+			return false 
+		end		
 	elseif phone_type == 6 then
 		MyX,MyY = findMultiColorInRegionFuzzy( 0xffffff, "6|3|0x0d2240,8|14|0x0d2240,-10|14|0x0d2240,-5|15|0xffffff,59|9|0x0e2341,59|3|0xffffff", 90, 1031, 1049, 1170, 1123)
 		return (MyX ~= -1 and true or false), MyX, MyY
@@ -753,8 +853,14 @@ function My俱乐部里程奖励()
 		MyX,MyY = findMultiColorInRegionFuzzy( 0xc3fb13, "5|-5|0x102540,5|16|0x1f373c,11|8|0xc3fb13,176|43|0x000921,166|32|0xc4fc10,68|7|0x0d2240", 90, 773, 582, 1041, 680)
 		return (MyX ~= -1 and true or false), MyX, MyY
 	elseif phone_type == 5 then
+		if (isColor( 402,  534, 0xffffff, 85) and isColor( 869,  561, 0x000921, 85) and isColor( 867,  552, 0xc5fb10, 85) and isColor( 850,  564, 0xc4fb10, 85) and isColor( 776,  536, 0x0d2240, 85) and isColor( 776,  543, 0xc3fb11, 85)) then
+			MyX,MyY = 402,  534
+			return true 
+		else 
+			return false 
+		end		
 	elseif phone_type == 6 then
-		MyX,MyY = findMultiColorInRegionFuzzy( 0xffffff, "-5|5|0x0d2240,-11|9|0xffffff,0|19|0xffffff,14|4|0x0d2240,36|4|0x0d2240,43|14|0x102542,48|18|0xffffff", 90, 672, 988, 799, 1070)
+		MyX,MyY = findMultiColorInRegionFuzzy( 0xffffff, "18|-4|0xffffff,276|50|0x010922,91|-4|0x142845,91|-21|0xffffff,26|-16|0xffffff,-17|-19|0x162a47", 90, 661, 971, 1085, 1137)
 		return (MyX ~= -1 and true or false), MyX, MyY
 	elseif phone_type == 7 then
 	end
